@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX App
+ * JavaFX App — Biblioteca Escolar
  */
 public class App extends Application {
 
@@ -17,7 +17,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Index"), 640, 480);
+        scene = new Scene(loadFXML("Index"), 700, 520);
+        stage.setTitle("Sistema de Biblioteca Escolar");
         stage.setScene(scene);
         stage.show();
     }
@@ -34,5 +35,4 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
 }

@@ -3,6 +3,7 @@ module br.edu.ifba.saj.ads.poo {
     requires javafx.fxml;
 
     opens br.edu.ifba.saj.ads.poo to javafx.fxml;
-    opens br.edu.ifba.saj.ads.poo.model to javafx.base;
+    opens br.edu.ifba.saj.ads.poo.model to javafx.base, javafx.fxml;
+
     exports br.edu.ifba.saj.ads.poo;
 }
