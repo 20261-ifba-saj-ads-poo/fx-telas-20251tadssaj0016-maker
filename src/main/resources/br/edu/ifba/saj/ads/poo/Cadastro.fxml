@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" style="-fx-padding: 16;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.edu.ifba.saj.ads.poo.CadastroController">
+
+    <Label text="Cadastro de Livro" style="-fx-font-size: 16;"/>
+
+    <HBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Titulo:" prefWidth="80"/>
+        <TextField fx:id="txTitulo" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Autor:" prefWidth="80"/>
+        <TextField fx:id="txAutor" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Categoria:" prefWidth="80"/>
+        <TextField fx:id="txCategoria" prefWidth="300"/>
+    </HBox>
+
+    <Button text="Salvar Livro" onAction="#salvarLivro"/>
+
+    <Label text="Livros cadastrados:" style="-fx-font-size: 13;"/>
+
+    <TableView fx:id="tbLivros" prefHeight="320">
+        <columns>
+            <TableColumn fx:id="colTitulo"    text="Titulo"    prefWidth="240"/>
+            <TableColumn fx:id="colAutor"     text="Autor"     prefWidth="180"/>
+            <TableColumn fx:id="colCategoria" text="Categoria" prefWidth="160"/>
+        </columns>
+        <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+    </TableView>
+
+</VBox>
